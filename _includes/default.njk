@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      {% block title %}Cristi Duma - No-BS Full Stack Web Developer{% endblock %}
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta property="og:description" content="Cristi Duma is a no-BS full stack software engineer building dynamic, creative, top to bottom products for the web." />
+    <meta name="image" content="https://cristiduma.com/images/cristi.duma.jpg?v={% version %}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Cristi Duma">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:creator" content="@cristiduma" />
+    <meta property="twitter:site" content="@cristiduma" />
+    <meta property="og:title" content="Cristi Duma" />
+    <meta property="og:description" content="Cristi Duma is a no-BS full stack software engineer building dynamic, creative, top to bottom products for the web." />
+    <meta property="og:url" content="https://cristiduma.com/" />
+    <meta property="og:image" content="https://cristiduma.com/images/cristi.duma.jpg?v={% version %}" />
+    <meta property="twitter:title" content="Cristi Duma" />
+    <meta property="twitter:description" content="Cristi Duma is a no-BS full stack software engineer building dynamic, creative, top to bottom products for the web." />
+    <meta property="twitter:url" content="https://cristiduma.com/" />
+    <meta property="twitter:image" content="https://cristiduma.com/images/cristi.duma.jpg?v={% version %}" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cristiduma.com/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cristiduma.com/images/favicon-16x16.png">
+
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  </head>
+  <body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-500 selection:text-teal-900">
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  </body>
+</html>
